@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Home Screen View Controller" customClass="ViewController" customModule="What_Should_I_Watch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Should I Watch? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTv-fv-5g0">
+                                <rect key="frame" x="35" y="245" width="303" height="33"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2q2-A5-nz6">
+                                <rect key="frame" x="140" y="312" width="95" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.79349201917648315" blue="0.0096260784193873405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="jCq-l8-1br"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5aQ-Ck-vu4" kind="show" id="0yH-eo-deq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2q2-A5-nz6" secondAttribute="trailing" constant="140" id="D42-L0-hzx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CTv-fv-5g0" secondAttribute="trailing" constant="37" id="Dlb-nD-4yC"/>
+                            <constraint firstItem="2q2-A5-nz6" firstAttribute="top" secondItem="CTv-fv-5g0" secondAttribute="bottom" constant="34" id="Tew-4g-ETd"/>
+                            <constraint firstItem="CTv-fv-5g0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="VgB-aJ-01r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2q2-A5-nz6" secondAttribute="bottom" constant="313" id="XPS-Wh-rkW"/>
+                            <constraint firstItem="CTv-fv-5g0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Y29-bK-Uus"/>
+                            <constraint firstItem="2q2-A5-nz6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="nFw-u6-5Xa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Recommendation View Controller-->
+        <scene sceneID="ZR4-sR-Pty">
+            <objects>
+                <viewController id="5aQ-Ck-vu4" userLabel="Recommendation View Controller" customClass="RecommendationViewController" customModule="What_Should_I_Watch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HAa-nV-58N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-5G-MZl">
+                                <rect key="frame" x="0.0" y="633" width="74" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.79349201917648315" blue="0.0096260784193873405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="5JY-Et-4sK"/>
+                                    <constraint firstAttribute="height" constant="34" id="swZ-CW-QBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title=" Home ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="34O-3h-mcE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Want To Watch..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrW-lr-uRT">
+                                <rect key="frame" x="16" y="62" width="343" height="33"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqp-jU-9Hn">
+                                <rect key="frame" x="124" y="153" width="127" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.79349201917648315" blue="0.0096260784193873405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Pick Movie ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickMovie:" destination="5aQ-Ck-vu4" eventType="touchUpInside" id="rKj-Qk-Nxy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="02M-9Z-4Xz">
+                                <rect key="frame" x="87" y="306" width="200" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2xj-VY-3dJ"/>
+                                    <constraint firstAttribute="height" constant="250" id="eK7-WB-Pk0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjT-N2-IPy">
+                                <rect key="frame" x="16" y="250" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tpf-5G-MZl" firstAttribute="leading" secondItem="HAa-nV-58N" secondAttribute="leading" id="0JZ-Wq-feQ"/>
+                            <constraint firstItem="pjT-N2-IPy" firstAttribute="top" secondItem="nqp-jU-9Hn" secondAttribute="bottom" constant="55" id="216-hm-San"/>
+                            <constraint firstItem="02M-9Z-4Xz" firstAttribute="top" secondItem="pjT-N2-IPy" secondAttribute="bottom" constant="35" id="3iG-tk-k3X"/>
+                            <constraint firstItem="YqD-xZ-PUN" firstAttribute="trailing" secondItem="jrW-lr-uRT" secondAttribute="trailing" constant="16" id="5et-u4-Nlx"/>
+                            <constraint firstItem="Tpf-5G-MZl" firstAttribute="bottom" secondItem="YqD-xZ-PUN" secondAttribute="bottom" id="6RW-vV-n2V"/>
+                            <constraint firstItem="YqD-xZ-PUN" firstAttribute="trailing" secondItem="nqp-jU-9Hn" secondAttribute="trailing" constant="124" id="J7b-UW-Qxb"/>
+                            <constraint firstItem="pjT-N2-IPy" firstAttribute="leading" secondItem="YqD-xZ-PUN" secondAttribute="leading" constant="16" id="MFN-6w-1d4"/>
+                            <constraint firstItem="02M-9Z-4Xz" firstAttribute="centerX" secondItem="HAa-nV-58N" secondAttribute="centerX" id="OLw-mT-NCr"/>
+                            <constraint firstItem="YqD-xZ-PUN" firstAttribute="trailing" secondItem="pjT-N2-IPy" secondAttribute="trailing" constant="16" id="aU4-DT-oep"/>
+                            <constraint firstItem="02M-9Z-4Xz" firstAttribute="centerY" secondItem="HAa-nV-58N" secondAttribute="centerY" constant="97.5" id="l5V-Zl-YzJ"/>
+                            <constraint firstItem="nqp-jU-9Hn" firstAttribute="leading" secondItem="YqD-xZ-PUN" secondAttribute="leading" constant="124" id="o5g-kq-F4x"/>
+                            <constraint firstItem="jrW-lr-uRT" firstAttribute="leading" secondItem="YqD-xZ-PUN" secondAttribute="leading" constant="16" id="wfY-Pf-oFc"/>
+                            <constraint firstItem="jrW-lr-uRT" firstAttribute="top" secondItem="YqD-xZ-PUN" secondAttribute="top" constant="42" id="yek-pm-mng"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YqD-xZ-PUN"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieImage" destination="02M-9Z-4Xz" id="pYy-Jg-4Hf"/>
+                        <outlet property="recommendationLabel" destination="pjT-N2-IPy" id="vfO-hR-nU6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auo-b5-nbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
